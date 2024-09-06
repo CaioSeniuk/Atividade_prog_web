@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Atividades 1,2 e 3/index.css">
+    <script src="../Atividades 1,2 e 3/script.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <h2 id="titulo">Formulário</h2>
+    <form method="post" action="https://formtester.goodbytes.be/post.php" onsubmit="return consultarCampos()">
+        <div class="container">
+            <div class="nome">
+                <label id="nome" for="nome">Nome</label> <span id="span" style="color: red;"></span>
+                <input id="input-nome" type="text" name="Nome" maxlength="40" size="40">
+            </div>
+            <div class="endereco">
+                <label id="endereco" for="endereco">Endereço</label>
+                <input id="input-endereco" type="text" name="Endereço" maxlength="255" size="40">
+            </div>
+            <div class="opcao">
+                <input id="residencial" type="radio" name="Opção" value="1"> Residencial
+                <input id="comercial" type="radio" name="Opção" value="2"> Comercial
+            </div>
+            <div class="observacoes" name="Observações:">
+                <p>Observações</p>
+                <textarea name="Observações" id="input-observacoes" cols="40" rows="10" placeholder="Digite algo..."></textarea>
+            </div>
+            <div class="button">
+                <button id="button">Enviar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
