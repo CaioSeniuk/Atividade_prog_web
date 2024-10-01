@@ -10,50 +10,57 @@
 <body>
     <h2 id="titulo">Formulário</h2>
     <form method="post" action="https://formtester.goodbytes.be/post.php" onsubmit="return consultarCampos()">
-        <div class="container">
-            <div class="nome">
-                <label id="nome" for="nome">Nome</label> <span id="span1" style="color: red;"></span>
-                <input id="input-nome" type="text" name="Nome" maxlength="40" size="40" placeholder="Insira o seu Nome...">
-            </div>
-            <div class="telefone">
-                <label id="telefone" for="telefone">Telefone</label> <span id="span2" style="color: red;"></span>
-                <input id="input-telefone" type="text" name="Telefone" maxlength="255" size="40" placeholder="Insira o seu Telefone...">
-            </div>
-            <div class="endereco">
-                <label id="endereco" for="endereco">Endereço</label> <span id="span3" style="color: red;"></span>
-                <input id="input-endereco" type="text" name="Endereço" maxlength="255" size="40" placeholder="Insira o seu Endereço...">
-            </div>
-            <div class="email">
-                <label id="email" for="email">E-mail</label> 
-                <input id="input-email" type="text" name="E-mail" maxlength="255" size="40" placeholder="Insira o seu E-mail...">
-            </div>
-            <div class="opcao-curso">
-                <label for="opcoes-curso">Opções de Curso:</label> <br/>
-                <select id="selecao" name="selecao">
-                    <option value="opcao1">Banco de Dados</option>
-                    <option value="opcao2" selected>Programação Web</option>
-                    <option value="opcao3">Estatística</option>
-                    <option value="opcao4">Java</option>
-                </select>
-            </div>
-            <div class="opcao-pagamento">
-                <label for="opcoes-pagamento">Opções de Pagamento:</label>
-                <ul id="lista-pagamento">
-                    <input id="pix" type="radio" name="Opção Pagamento" value="1"> Pix</input> <br/>
-                    <input id="boleto" type="radio" name="Opção Pagamento" value="2"> Boleto Bancário</input> <br/>
-                    <input id="credito" type="radio" name="Opção Pagamento" value="3"> Cartão de Crédito</input> <br/>
-                    <input id="debito" type="radio" name="Opção Pagamento" value="4"> Cartão de Débito</input>
-                </ul>
-            </div>
-            <div class="data">
-                <label for="Data de início">Data de início: </label>
-                <input type="date" id="data1" name="Data de ínicio"> <br/>
-                <label for="Data de início">Data de fim: </label>
-                <input type="date" id="data2" name="Data de fim"> 
-            </div>
-            <div class="button">
-                <button id="button">Enviar</button>
-            </div>
+        <div class="box">
+            <div class="container">
+                <ol class="left-content">
+                    <div class="nome">
+                        <label id="nome" for="nome">Nome</label> <span id="span1" style="color: red;"></span>
+                        <input id="input-nome" type="text" name="Nome" maxlength="40" size="40" placeholder="Insira o seu Nome...">
+                    </div>
+                    <div class="telefone">
+                        <label id="telefone" for="telefone">Telefone</label> <span id="span2" style="color: red;"></span>
+                        <input id="input-telefone" type="text" name="Telefone" maxlength="255" size="40" placeholder="Insira o seu Telefone...">
+                    </div>
+                    <div class="endereco">
+                        <label id="endereco" for="endereco">Endereço</label> <span id="span3" style="color: red;"></span>
+                        <input id="input-endereco" type="text" name="Endereço" maxlength="255" size="40" placeholder="Insira o seu Endereço...">
+                    </div>
+                    <div class="email">
+                        <label id="email" for="email">E-mail</label> 
+                        <input id="input-email" type="text" name="E-mail" maxlength="255" size="40" placeholder="Insira o seu E-mail...">
+                    </div>
+                </ol>
+    
+                <ol class="right-content">
+                    <div class="opcao-curso">
+                        <label for="opcoes-curso">Opções de Curso:</label> <br/>
+                        <select id="selecao" name="selecao">
+                            <option value="opcao1">Banco de Dados</option>
+                            <option value="opcao2" selected>Programação Web</option>
+                            <option value="opcao3">Estatística</option>
+                            <option value="opcao4">Java</option>
+                        </select>
+                    </div>
+                    <div class="opcao-pagamento">
+                        <label for="opcoes-pagamento">Opções de Pagamento:</label>
+                        <ul id="lista-pagamento">
+                            <input id="pix" type="radio" name="Opção Pagamento" value="1"> Pix</input> <br/>
+                            <input id="boleto" type="radio" name="Opção Pagamento" value="2"> Boleto Bancário</input> <br/>
+                            <input id="credito" type="radio" name="Opção Pagamento" value="3"> Cartão de Crédito</input> <br/>
+                            <input id="debito" type="radio" name="Opção Pagamento" value="4"> Cartão de Débito</input>
+                        </ul>
+                    </div>
+                    <div class="data">
+                        <label for="Data de início">Data de início: </label>
+                        <input type="date" id="data1" name="Data de ínicio"> <br/>
+                        <label for="Data de início">Data de fim: </label>
+                        <input type="date" id="data2" name="Data de fim"> 
+                    </div>
+                </div>
+                </ol>
+                <div class="button">
+                    <button id="button">Enviar</button>
+                </div>
         </div>
     </form>
 </body>
